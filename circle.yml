@@ -1,0 +1,21 @@
+dependencies:
+  post:
+    - ./gradlew aws
+
+general:
+  artifacts:
+    - "build/aws"
+
+deployment:
+  development:
+    branch: master
+    codedeploy:
+      id-service:
+        application_root: /build/aws
+        region: us-west-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: document-service
+            key_pattern: document-service-{SHORT_COMMIT}-{BUILD_NUM}
+        deployment_group: document-service

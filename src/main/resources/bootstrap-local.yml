@@ -1,0 +1,12 @@
+#LOCAL Profile
+
+#service runs on localhost:8082
+#eureka server is on localhost:8080
+
+server: 
+  port: 8082
+eureka:
+  shouldUseDns: false
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/v2

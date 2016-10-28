@@ -1,0 +1,15 @@
+# Common Properties
+
+# Application is 'document-service'
+# Cloud Config is currently disabled, all properties are served from yml files.
+
+# If not otherwise stated, the default profile is LOCAL
+
+spring:
+  application:
+    name: document-service
+  profiles:
+    active: local
+  cloud:
+    config:
+      enabled: false
