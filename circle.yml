@@ -10,7 +10,7 @@ deployment:
   development:
     branch: master
     codedeploy:
-      id-service:
+      document-service:
         application_root: /build/aws
         region: us-west-1
         revision_location:
