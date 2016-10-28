@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "Attempting to stop id-service..."
-if [ -L /etc/init.d/id-service ]
+echo "Attempting to stop document-service..."
+if [ -L /etc/init.d/document-service ]
 then
-  echo "Stopping id-service."
-  service id-service stop
+  echo "Stopping document-service."
+  service document-service stop
 else
   echo "No service to stop."
 fi

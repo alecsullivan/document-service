@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/id-service/
+    destination: /var/document-service/
 hooks:
   ApplicationStop:
     - location: scripts/stop.sh
