@@ -40,7 +40,7 @@ public class DemoDataInitializer implements InitializingBean {
 		String id = null;
 		
 		List<ServiceInstance> serviceInstances = discoveryClient.getInstances("id-service");
-		LOGGER.debug("Got instances: %s", serviceInstances);		
+		LOGGER.debug("Got instances: %s", serviceInstances);
 		if(serviceInstances != null && serviceInstances.size() > 0) {
 			LOGGER.debug("Found %s instances.", serviceInstances.size());
 			ServiceInstance serviceInstance = serviceInstances.get(0);
