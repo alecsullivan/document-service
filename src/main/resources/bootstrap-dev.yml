@@ -1,13 +1,13 @@
 #DEV Profile
 
 #service runs on dedicated dev machine, port 8080
-#eureka is located via the discovery.dorffi.com domain.
+#eureka is located via the dev.discovery.dorffi.com domain.
 
 server:
   port: 8080
 eureka:  
   client:
     useDnsForFetchingServiceUrls: true
-    eurekaServerDNSName: discovery.dorffi.com
+    eurekaServerDNSName: dev.discovery.dorffi.com
     eurekaServerPort: 8080
     eurekaServerURLContext: eureka/v2
